@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/casino"
+    tools:context=".ui.game.GameFragment">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/field1_btn"
+        android:layout_width="113dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="150dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/zero"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/field2_btn"
+        android:layout_width="113dp"
+        android:layout_height="123dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/field1_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/field1_btn"
+        app:srcCompat="@drawable/zero"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/field3_btn"
+        android:layout_width="113dp"
+        android:layout_height="123dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/field2_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/field1_btn"
+        app:srcCompat="@drawable/zero"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/field4_btn"
+        android:layout_width="113dp"
+        android:layout_height="123dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toLeftOf="@+id/field1_btn"
+        app:layout_constraintTop_toBottomOf="@+id/field1_btn"
+        app:srcCompat="@drawable/zero"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/field5_btn"
+        android:layout_width="113dp"
+        android:layout_height="123dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/field4_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/field4_btn"
+        app:srcCompat="@drawable/zero"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/field6_btn"
+        android:layout_width="113dp"
+        android:layout_height="123dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/field5_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/field4_btn"
+        app:srcCompat="@drawable/zero"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/field7_btn"
+        android:layout_width="113dp"
+        android:layout_height="123dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toLeftOf="@+id/field1_btn"
+        app:layout_constraintTop_toBottomOf="@+id/field4_btn"
+        app:srcCompat="@drawable/zero"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/field8_btn"
+        android:layout_width="113dp"
+        android:layout_height="123dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/field7_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/field7_btn"
+        app:srcCompat="@drawable/zero"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/field9_btn"
+        android:layout_width="113dp"
+        android:layout_height="123dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/field8_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/field7_btn"
+        app:srcCompat="@drawable/zero"
+        />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:textColor="#EF0E5B"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

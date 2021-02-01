@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_start">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.missclick.gamexo.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_start"
+        android:name="com.missclick.gamexo.ui.start.StartFragment"
+        android:label="@string/title_start"
+        tools:layout="@layout/fragment_start" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.missclick.gamexo.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_game"
+        android:name="com.missclick.gamexo.ui.game.GameFragment"
+        android:label="@string/title_game"
+        tools:layout="@layout/fragment_game" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.missclick.gamexo.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_finish"
+        android:name="com.missclick.gamexo.ui.finish.FinishFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_finish" />
 </navigation>
