@@ -22,4 +22,10 @@
         android:name="com.missclick.gamexo.ui.finish.FinishFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_finish" />
+
+    <fragment
+        android:id="@+id/navigation_garbage"
+        android:name="com.missclick.gamexo.ui.garbage.GarbageFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/garbage_fragment" />
 </navigation>

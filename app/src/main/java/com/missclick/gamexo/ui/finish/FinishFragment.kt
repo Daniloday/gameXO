@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import com.missclick.gamexo.MainActivity
 import com.missclick.gamexo.R
 import com.missclick.gamexo.data.Finish
 
@@ -33,7 +34,8 @@ class FinishFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         finishViewModel =
-                ViewModelProvider(this).get(FinishViewModel::class.java)
+                ViewModelProvider(requireActivity()).get(FinishViewModel::class.java)
+
         val root = inflater.inflate(R.layout.fragment_finish, container, false)
 //        val textView: TextView = root.findViewById(R.id.text_notifications)
         finishViewModel.text.observe(viewLifecycleOwner, Observer {
@@ -71,6 +73,7 @@ class FinishFragment : Fragment() {
             if (result!!.field[i] == 0) fieldBtn[i].setImageResource(R.drawable.first)
             if (result!!.field[i] == 1) fieldBtn[i].setImageResource(R.drawable.second)
         }
+        finishViewModel.saveResult(result!!)
         val restartBtn : ImageView = view.findViewById(R.id.restart_btn)
         restartBtn.setOnClickListener {
             it.findNavController().navigate(R.id.navigation_game)

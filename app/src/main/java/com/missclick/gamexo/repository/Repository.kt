@@ -1,9 +1,11 @@
 package com.missclick.gamexo.repository
 
+import android.util.Log
 import com.missclick.gamexo.data.Finish
 import com.missclick.gamexo.datasource.local.LocalDataSource
 import com.missclick.gamexo.map.mapLessonEntityToModel
 import com.missclick.gamexo.map.mapLessonModelToEntity
+
 
 class Repository(var local : LocalDataSource): IRepository {
 

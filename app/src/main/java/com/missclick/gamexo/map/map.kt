@@ -7,6 +7,7 @@ fun mapLessonEntityToModel(resultEntity: FinishEntity) : Finish {
     val linksStr = resultEntity.field
     val links = strToMap(linksStr)
     return Finish(
+
             winner = resultEntity.winner,
             field = links
     )
@@ -15,6 +16,7 @@ fun mapLessonEntityToModel(resultEntity: FinishEntity) : Finish {
 fun mapLessonModelToEntity(lessonModel: Finish) : FinishEntity{
     val links = mapToStr(lessonModel.field)
     return FinishEntity(
+            id = 1,
             winner = lessonModel.winner,
             field = links
     )

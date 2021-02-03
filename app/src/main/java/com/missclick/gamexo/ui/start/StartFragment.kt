@@ -30,9 +30,15 @@ class StartFragment : Fragment() {
 //            textView.text = it
 //        })
         val start : ImageView = root.findViewById(R.id.start_btn)
+        val garbage : ImageView = root.findViewById(R.id.garbageBtn)
         start.setOnClickListener {
             it.findNavController().navigate(R.id.navigation_game)
         }
+        garbage.setOnClickListener {
+            it.findNavController().navigate(R.id.navigation_garbage)
+        }
         return root
     }
+
+
 }
